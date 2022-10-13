@@ -8,7 +8,7 @@ const app = express();
 const corsOptions = {origin: process.env.URL || '*'};
 
 app.use(cors(corsOptions));
-app.use(json());
+app.use(express.json());
 
 app.use('/api', userRouter)
 app.use('/api', feedbackRouter)
