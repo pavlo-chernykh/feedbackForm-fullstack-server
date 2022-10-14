@@ -5,6 +5,7 @@ const postController = require('../controller/feedback.controller');
 router.post('/feedback', postController.createPost);
 router.get('/feedback', postController.getPostsByUser);
 router.get('/feedbackAll', postController.getAllPosts);
+router.delete('/feedbackAll/:id', postController.deletePost);
 
 
 module.exports = router;
