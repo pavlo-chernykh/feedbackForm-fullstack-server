@@ -13,4 +13,4 @@ app.use(express.json());
 app.use('/api', userRouter)
 app.use('/api', feedbackRouter)
 
-app.listen(PORT, () => console.log(`server listening on ${PORT}`))
+app.listen(PORT, () => console.log(`server listening on ${PORT}`));
