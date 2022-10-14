@@ -30,15 +30,6 @@ class PostController {
     }
   }
 
-  async deletePost(req, res) {
-    try {
-      const id = req.params.id
-      const feedback = await db.query('DELETE FROM feedback where id = $1', [id])
-      res.json(feedback.rows[0])
-    } catch (error) {
-      console.log(error.message);
-    }
-  }
 }
 
 module.exports = new PostController()
